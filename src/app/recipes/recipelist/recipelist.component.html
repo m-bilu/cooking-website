@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-xs-12">
+        
+        <button 
+        class="btn btn-success"
+        [routerLink]="['/recipes/new']">New Recipe</button>
+    </div>
+</div>
+
+<hr>
+
+<div class="row">
+    <div class="col-xs-12">
+       <!-- Enter ngFor loop here -->
+       
+        <app-recipeitem 
+        *ngFor="let item of recipes; let i = index"
+        [recipeInfo]="item"
+        [recipeNum]="+i">
+        </app-recipeitem>
+       
+    </div>
+</div>
+
+<!--Later, will put this in its own component, fill text with dynamic date from some backend source-->

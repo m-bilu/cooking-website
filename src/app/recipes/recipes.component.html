@@ -1,0 +1,19 @@
+<div class="row"> 
+    <div class="col-md-5">
+        <app-recipelist></app-recipelist>
+    </div>
+    
+    <div class="col-md-5">
+        <router-outlet></router-outlet>
+    </div>
+
+</div>
+
+
+<!-- <div class="col-md-7"
+    *ngIf="detailRequest; else otherContent">
+        <app-recipedetail [currentRecipe]="detailRequest"></app-recipedetail>  This should place list, detail next to each other 
+    </div>
+    <ng-template #otherContent>
+        Please select a recipe!
+    </ng-template> -->
